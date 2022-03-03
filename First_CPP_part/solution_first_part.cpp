@@ -4,8 +4,10 @@ template <typename T>
 T GetAnChaeckData()
 {
     T temp;
+    std::cout << "Enter value: " << std::endl = "\t";
+
     std::cin >> temp;
-    while (cin.fail() || cin.get() != '\n')
+    while (std::cin.fail() || std::cin.get() != '\n')
     {
         std::cin.clear(); // Resets all bits of flow, Ie the flow becomes good
         std::cin.ignore(9999, '\n');

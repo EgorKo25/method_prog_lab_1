@@ -7,11 +7,11 @@ T GetAnChaeckData()
     std::cin >> temp;
     while (cin.fail() || cin.get() != '\n')
     {
-        cin.clear(); // Resets all bits of flow, Ie the flow becomes good
-        cin.ignore(9999, '\n');
-        cin.sync(); //Delete data from Buffer
-        STD::cout << "Enter again: ";
-        STD::cin >> temp;
+        std::cin.clear(); // Resets all bits of flow, Ie the flow becomes good
+        std::cin.ignore(9999, '\n');
+        std::cin.sync(); //Delete data from Buffer
+        std::cout << "Enter again: ";
+        std::cin >> temp;
     }
     return temp;
 }
